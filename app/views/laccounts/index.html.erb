@@ -1,0 +1,23 @@
+<h1>Listing laccounts</h1>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @laccounts.each do |laccount| %>
+  <tr>
+    <td><%= laccount.code %></td>
+    <td><%= link_to 'Show', laccount %></td>
+    <td><%= link_to 'Edit', edit_laccount_path(laccount) %></td>
+    <td><%= link_to 'Destroy', laccount, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Laccount', new_laccount_path %>

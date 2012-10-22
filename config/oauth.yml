@@ -1,0 +1,7 @@
+linkedin-example:
+  api_host: https://api.linkedin.com
+  request_token_path: /uas/oauth/requestToken
+  access_token_path: /uas/oauth/accessToken
+  authorize_path: /uas/oauth/authorize
+  consumer_key: Insert your LinkedIn API Key here
+  consumer_secret: Insert your LinkedIn secret key here

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  active: false
+  stream_url: MyText
+  oauth_token: MyString
+  oauth_token_secret: MyString
+  oauth_token_verifier: MyString
+  oauth_authorize_url: MyText
+
+two:
+  active: false
+  stream_url: MyText
+  oauth_token: MyString
+  oauth_token_secret: MyString
+  oauth_token_verifier: MyString
+  oauth_authorize_url: MyText

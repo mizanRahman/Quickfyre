@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Home|Quickfyre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+      .footer {
+        padding: 20px 0px 40px 0px;
+      }
+    </style>
+	<title>Project</title>
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<!--navigation bar  -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <%=link_to 'Quickfyre' , root_path , :class=>"brand" %>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><%=link_to 'Home' , root_path%></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="pull-right">
+                  <%= userlink %>
+              </li>
+  
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <!-- nav bar -->
+
+	<div class="container">
+		<p><%= notice %></p>
+
+		<p><%= alert %></p>
+
+
+		<%= yield %>
+	
+
+
+     <!-- Footer
+      ================================================== -->
+      <footer class="footer">
+
+        
+        <div class="span3">
+          <p><%=link_to 'Admin', admin_path%></p>
+          <p><%=link_to 'Home', root_path%></p>
+          <p><%=link_to 'Support', root_path%></p>
+          <p><%=link_to 'Pricing', root_path%></p>
+          <p><%=link_to 'Lab', root_path%></p>
+        </div>
+        <div class="span3">
+          <p><%=link_to 'Lab', root_path%></p>
+          <p><%=link_to 'News', root_path%></p>
+          <p><%=link_to 'Admin', admin_path%></p>
+          <p><%=link_to 'Support', root_path%></p>
+          <p><%=link_to 'Pricing', root_path%></p>
+          
+        </div>
+
+        <div class="span5">
+
+          <p>Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter </a><a href="http://facebook.com" target="_blank">facebook</a><a href="http://linkedin.com" target="_blank">linkedin</a>.</p>
+          <p>A product of quickfyre inc. <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+          <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+
+          
+        </div>
+
+      </footer>
+
+    </div> <!-- /container -->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+         twitter_accounts GET    /twitter_accounts(.:format)          twitter_accounts#index
+                          POST   /twitter_accounts(.:format)          twitter_accounts#create
+      new_twitter_account GET    /twitter_accounts/new(.:format)      twitter_accounts#new
+     edit_twitter_account GET    /twitter_accounts/:id/edit(.:format) twitter_accounts#edit
+          twitter_account GET    /twitter_accounts/:id(.:format)      twitter_accounts#show
+                          PUT    /twitter_accounts/:id(.:format)      twitter_accounts#update
+                          DELETE /twitter_accounts/:id(.:format)      twitter_accounts#destroy
+     twitter_accounts_new GET    /twitter_accounts/new(.:format)      twitter_accounts#new
+twitter_accounts_callback GET    /twitter_accounts/callback(.:format) twitter_accounts#callback
+         twitter_callback        /callback/twitter(.:format)          twitter_accounts#callback
+                    posts GET    /posts(.:format)                     posts#index
+                          POST   /posts(.:format)                     posts#create
+                 new_post GET    /posts/new(.:format)                 posts#new
+                edit_post GET    /posts/:id/edit(.:format)            posts#edit
+                     post GET    /posts/:id(.:format)                 posts#show
+                          PUT    /posts/:id(.:format)                 posts#update
+                          DELETE /posts/:id(.:format)                 posts#destroy
+         new_user_session GET    /users/sign_in(.:format)             devise/sessions#new
+             user_session POST   /users/sign_in(.:format)             devise/sessions#create
+     destroy_user_session DELETE /users/sign_out(.:format)            devise/sessions#destroy
+            user_password POST   /users/password(.:format)            devise/passwords#create
+        new_user_password GET    /users/password/new(.:format)        devise/passwords#new
+       edit_user_password GET    /users/password/edit(.:format)       devise/passwords#edit
+                          PUT    /users/password(.:format)            devise/passwords#update
+ cancel_user_registration GET    /users/cancel(.:format)              devise/registrations#cancel
+        user_registration POST   /users(.:format)                     devise/registrations#create
+    new_user_registration GET    /users/sign_up(.:format)             devise/registrations#new
+   edit_user_registration GET    /users/edit(.:format)                devise/registrations#edit
+                          PUT    /users(.:format)                     devise/registrations#update
+                          DELETE /users(.:format)                     devise/registrations#destroy
+                                 /posts/:id/publish(.:format)         posts#publish
+                     root        /                                    home#index
+           sub_catagories GET    /sub_catagories(.:format)             sub_catagories#index
+                          POST   /sub_catagories(.:format)             sub_catagories#create
+         new_sub_catagory GET    /sub_catagories/new(.:format)         sub_catagories#new
+        edit_sub_catagory GET    /sub_catagories/:id/edit(.:format)    sub_catagories#edit
+             sub_catagory GET    /sub_catagories/:id(.:format)         sub_catagories#show
+                          PUT    /sub_catagories/:id(.:format)         sub_catagories#update
+                          DELETE /sub_catagories/:id(.:format)         sub_catagories#destroy
+               catagories GET    /catagories(.:format)                 catagories#index
+                          POST   /catagories(.:format)                 catagories#create
+             new_catagory GET    /catagories/new(.:format)             catagories#new
+            edit_catagory GET    /catagories/:id/edit(.:format)        catagories#edit
+                 catagory GET    /catagories/:id(.:format)             catagories#show
+                          PUT    /catagories/:id(.:format)             catagories#update
+                          DELETE /catagories/:id(.:format)             catagories#destroy
+                laccounts GET    /laccounts(.:format)                  laccounts#index
+                          POST   /laccounts(.:format)                  laccounts#create
+             new_laccount GET    /laccounts/new(.:format)              laccounts#new
+            edit_laccount GET    /laccounts/:id/edit(.:format)         laccounts#edit
+                 laccount GET    /laccounts/:id(.:format)              laccounts#show
+                          PUT    /laccounts/:id(.:format)              laccounts#update
+                          DELETE /laccounts/:id(.:format)              laccounts#destroy
+                    admin        /admin(.:format)                      accounts#index
+                 accounts GET    /accounts(.:format)                   accounts#index
+                          POST   /accounts(.:format)                   accounts#create
+              new_account GET    /accounts/new(.:format)               accounts#new
+             edit_account GET    /accounts/:id/edit(.:format)          accounts#edit
+                  account GET    /accounts/:id(.:format)               accounts#show
+                          PUT    /accounts/:id(.:format)               accounts#update
+                          DELETE /accounts/:id(.:format)               accounts#destroy
+         facebook_account POST   /facebook_account(.:format)           facebook_accounts#create
+     new_facebook_account GET    /facebook_account/new(.:format)       facebook_accounts#new
+    edit_facebook_account GET    /facebook_account/edit(.:format)      facebook_accounts#edit
+                          GET    /facebook_account(.:format)           facebook_accounts#show
+                          PUT    /facebook_account(.:format)           facebook_accounts#update
+                          DELETE /facebook_account(.:format)           facebook_accounts#destroy
+        facebook_callback        /callback/facebook(.:format)          facebook_accounts#callback
+         twitter_accounts GET    /twitter_accounts(.:format)           twitter_accounts#index
+                          POST   /twitter_accounts(.:format)           twitter_accounts#create
+      new_twitter_account GET    /twitter_accounts/new(.:format)       twitter_accounts#new
+     edit_twitter_account GET    /twitter_accounts/:id/edit(.:format)  twitter_accounts#edit
+          twitter_account GET    /twitter_accounts/:id(.:format)       twitter_accounts#show
+                          PUT    /twitter_accounts/:id(.:format)       twitter_accounts#update
+                          DELETE /twitter_accounts/:id(.:format)       twitter_accounts#destroy
+        linkedin_accounts GET    /linkedin_accounts(.:format)          linkedin_accounts#index
+                          POST   /linkedin_accounts(.:format)          linkedin_accounts#create
+     new_linkedin_account GET    /linkedin_accounts/new(.:format)      linkedin_accounts#new
+    edit_linkedin_account GET    /linkedin_accounts/:id/edit(.:format) linkedin_accounts#edit
+         linkedin_account GET    /linkedin_accounts/:id(.:format)      linkedin_accounts#show
+                          PUT    /linkedin_accounts/:id(.:format)      linkedin_accounts#update
+                          DELETE /linkedin_accounts/:id(.:format)      linkedin_accounts#destroy
+        linkedin_callback        /callback/linkedin(.:format)          linkedin_accounts#callback
+     twitter_accounts_new GET    /twitter_accounts/new(.:format)       twitter_accounts#new
+twitter_accounts_callback GET    /twitter_accounts/callback(.:format)  twitter_accounts#callback
+         twitter_callback        /callback/twitter(.:format)           twitter_accounts#callback
+                    posts GET    /posts(.:format)                      posts#index
+                          POST   /posts(.:format)                      posts#create
+                 new_post GET    /posts/new(.:format)                  posts#new
+                edit_post GET    /posts/:id/edit(.:format)             posts#edit
+                     post GET    /posts/:id(.:format)                  posts#show
+                          PUT    /posts/:id(.:format)                  posts#update
+                          DELETE /posts/:id(.:format)                  posts#destroy
+         new_user_session GET    /users/sign_in(.:format)              devise/sessions#new
+             user_session POST   /users/sign_in(.:format)              devise/sessions#create
+     destroy_user_session DELETE /users/sign_out(.:format)             devise/sessions#destroy
+            user_password POST   /users/password(.:format)             devise/passwords#create
+        new_user_password GET    /users/password/new(.:format)         devise/passwords#new
+       edit_user_password GET    /users/password/edit(.:format)        devise/passwords#edit
+                          PUT    /users/password(.:format)             devise/passwords#update
+ cancel_user_registration GET    /users/cancel(.:format)               devise/registrations#cancel
+        user_registration POST   /users(.:format)                      devise/registrations#create
+    new_user_registration GET    /users/sign_up(.:format)              devise/registrations#new
+   edit_user_registration GET    /users/edit(.:format)                 devise/registrations#edit
+                          PUT    /users(.:format)                      devise/registrations#update
+                          DELETE /users(.:format)                      devise/registrations#destroy
+                                 /posts/:id/publish(.:format)          posts#publish
+                     root        /                                     home#index

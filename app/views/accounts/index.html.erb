@@ -1,0 +1,49 @@
+<h1>Users</h1>
+
+<p></p>
+<table>
+  <tr>
+    <th>user email</th>
+    <th>Facebook</th>
+    <th>Twitter</th>
+    <th>Linkedin</th>
+    <th></th>
+  </tr>
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.email %></td>
+    <td><%= if user.facebook_account and user.facebook_account.active  
+              'active ' 
+            else
+              'inactive '
+            end %></td>
+
+    <td><%= if user.twitter_account and user.twitter_account.active 
+              'active ' 
+            else
+              'inactive '
+            end %></td>
+    <td><%= if user.linkedin_account and user.linkedin_account.active 
+              'active ' 
+            else
+              'inactive '
+            end %></td>
+    <td><%= link_to 'Post ',status_post_path(:id=>user.id) %></td>
+
+    
+
+  </tr>
+    
+<% end %>
+
+
+  
+    
+</table>
+
+<br />
+<ul>
+<span><%= link_to 'posts', posts_path %></span>
+<span><%= link_to 'catagories', catagories_path %></span>
+<span><%= link_to 'subcatagories', subcatagories_path %></span>
+</ul>
